@@ -33,19 +33,42 @@ The receive route, showing the wallet overview
 */
 
 Router.route('/', {
-    template: 'views_view1',
+    template: 'views_borrowerQueue',
     name: 'home'
 });
 
-Router.route('/view1', {
-    template: 'views_view1',
-    name: 'view1'
+Router.route('/borrowerQueue', {
+    template: 'views_borrowerQueue',
+    name: 'borrowerQueue'
 });
 
-Router.route('/view2', {
-    template: 'views_view2',
-    name: 'view2'
+Router.route('/blacklist', {
+    template: 'views_blacklist',
+    name: 'blacklist'
 });
+Router.route('/borrow', {
+    template: 'views_borrow',
+    name: 'borrow'
+});
+Router.route('/save', {
+    template: 'views_save',
+    name: 'save'
+});
+
+Router.route('/stats', {
+    template: 'views_stats',
+    name: 'stats'
+});
+Router.route('/networkHealth', {
+    template: 'views_networkHealth',
+    name: 'networkHealth'
+});
+Router.route('/myaccount', {
+    template: 'views_myaccount',
+    name: 'myaccount'
+});
+
+
 
 
 
