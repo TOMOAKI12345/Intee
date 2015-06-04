@@ -1,3 +1,4 @@
+// var psgeth = KNOONEIoajsd
 
 // disconnect any meteor server
 if(location.host !== 'localhost:3000' && location.host !== '127.0.0.1:3000')
@@ -11,12 +12,20 @@ if(!LocalStore.get('etherUnit'))
 
 // Set Session default values for components
 if (Meteor.isClient) {
-	Session.setDefault('balance', '0');
-	Session.setDefault('address', 0);
-	Session.setDefault('multiplyResult', '0');
-	Session.setDefault('multiplyValue', '0');
+    Session.setDefault('connected', false);
+    Session.setDefault('balance', 0);
+    Session.setDefault('blockNumber', 0);
+    Session.setDefault('savingPointAddress', '0x02efa6fa829576670aaf5e7da244aecd6a803379');
+    Session.setDefault("providerHost", "localhost");
+    Session.setDefault("providerPort", "8080");
+    Session.setDefault("account", 0);
+    Session.setDefault("currentContractAddress", "");
+    Session.setDefault("contractName", "");
+    Session.setDefault("contractAbi", []);
+    Session.setDefault("contractMethods", []);
+    Session.setDefault("contractBalance", 0);
+    Session.setDefault('contractBytes', 0);
 }
-
 
 Meteor.startup(function() {
 
@@ -30,7 +39,7 @@ Meteor.startup(function() {
         // set default language
         if (_.isObject(availLang) && availLang[userLang]) {
             TAPi18n.setLanguage(userLang);
-            // lang = userLang; 
+            // lang = userLang;
         } else if (_.isObject(availLang) && availLang[userLang.substr(0,2)]) {
             TAPi18n.setLanguage(userLang.substr(0,2));
             // lang = userLang.substr(0,2);
@@ -45,7 +54,7 @@ Meteor.startup(function() {
             moment.locale(TAPi18n.getLanguage().substr(0,2));
             numeral.language(TAPi18n.getLanguage().substr(0,2));
         }
-    });	
+    });
 
 	// Set Meta Title
 	Meta.setTitle(TAPi18n.__("dapp.app.title"));

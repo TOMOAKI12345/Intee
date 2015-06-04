@@ -1,0 +1,15 @@
+<template name="components_saveEther">
+    <div class="panel panel-default panel-dapp">
+        <div class="panel-heading">{{i18n 'dapp.components.saveEther.header'}}</div>
+        <div class="panel-body">
+            <p>Intee funds address is here: <strong><input type="text" value="{{$.Session.get 'address'}}" class="web3_sp_address" /></strong></p>
+            <div class="divider"></div>
+            <h3>{{i18n 'dapp.app.headers.solidity'}}</h3>
+            <pre>{{source}}</pre>
+            <p><input type="text" id="multiplyNum" class="form-control" placeholder="{{i18n 'dapp.components.saveEther.placeholder'}}" /> <br/>
+                7 * {{$.Session.get 'multiplyValue'}}  = <strong>{{$.Session.get 'multiplyResult'}}</strong></p>
+            <h6>{{i18n 'dapp.components.saveEther.description'}}</h6>
+            <button type="button" class="btn btn-default">{{i18n 'dapp.components.saveEther.create'}}</button>
+        </div>
+    </div>
+</template>

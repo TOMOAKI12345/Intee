@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/meteor-dapp-boilerplate.iml" filepath="$PROJECT_DIR$/.idea/meteor-dapp-boilerplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/intee.iml" filepath="$PROJECT_DIR$/.idea/intee.iml" />
     </modules>
   </component>
 </project>

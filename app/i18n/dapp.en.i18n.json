@@ -31,12 +31,21 @@
 	}
   , "components": {
 	  "balance": {
-		"header": "My Balance"
-	  , "original": "Original Balance"
+		"header": "My Ether Balance"
+	  , "original": "Ether Balance at coinbase"
 	  }
-	, "accounts": {
-		"header": "My Accounts"
-	  , "description": "These are your Ethereum addresses. The identicons are generated based on the address value. Note, balance is static."
+	,  "spBalance": {
+		"header": "My Saving Points Balance"
+	  , "original": "Saving Points Balance"
+	  }
+	,"saveEther": {
+		"header": "Save Ether",
+		"description": "After save Ether on Intee, you will get saving points each day."
+	  , "original": "Saving Points Balance"
+	  }
+	,"accounts": {
+		"header": "My Ethereum Accounts"
+	  , "description": "Your Ethereum addresses."
 	  }
 	, "multiplyContract": {
 		"header": "Multiply Contract"

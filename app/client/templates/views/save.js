@@ -5,10 +5,12 @@
  */
 
 /**
- The savee template
+ The save template
 
- @class [template] views_savee
+ @class [template] views_save
  @constructor
+
+ // send ether to Intee fund contract address.
  */
 
 Template['views_save'].helpers({
