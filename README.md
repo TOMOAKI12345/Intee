@@ -1,3 +1,9 @@
+### Intee 
+
+Intee is the decentralized interest free banking system, inspired by Islamic Finance and Local Interest free banks, such as JAK Members bank.
+
+
+
 # meteor-dapp-boilerplate
 
 A starting point for decentralized MeteorJS applications. Includes Ethereum.js, iron-router, Bootstrap 3, Font Awesome, LESS and more.
